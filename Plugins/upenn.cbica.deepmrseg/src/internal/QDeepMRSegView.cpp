@@ -15,6 +15,8 @@ QDeepMRSegView::QDeepMRSegView()
 	}
 	
 	int* myIntPointer = new int;
+	*myIntPointer = 8;
+	delete myIntPointer;
 	
 }
 
