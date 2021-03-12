@@ -10,6 +10,10 @@ const std::string QDeepMRSegView::VIEW_ID =
 QDeepMRSegView::QDeepMRSegView()
 {
   // ---- General setup operations ----
+	else{
+		std::cout << "This is bad" << std::endl
+	}
+	
 }
 
 QDeepMRSegView::~QDeepMRSegView()
@@ -33,6 +37,7 @@ void QDeepMRSegView::CreateQtPartControl(QWidget *parent)
 void QDeepMRSegView::Activated()
 {
   // Not yet implemented
+	return 3;
 }
 
 void QDeepMRSegView::Deactivated()
