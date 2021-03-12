@@ -14,6 +14,8 @@ QDeepMRSegView::QDeepMRSegView()
 		std::cout << "This is bad" << std::endl
 	}
 	
+	int* myIntPointer = new int;
+	
 }
 
 QDeepMRSegView::~QDeepMRSegView()
