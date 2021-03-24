@@ -27,13 +27,17 @@ QDeepMRSegView::~QDeepMRSegView()
 
 void QDeepMRSegView::CreateQtPartControl(QWidget *parent)
 {
-	w = new QWidget();
-
   // ---- Setup the basic GUI of this view ----
   m_Parent = parent;
   m_Controls.setupUi(parent);
 
-  connect(m_Controls.pushButton_DoStuff, SIGNAL(clicked()),
+  //hide temporarily since python side doesn't yet thrown progress
+  m_Controls.progressBar->hide(); 
+
+  //temporarily disabled since this would change
+  m_Controls.groupBox_DataSelection->setDisabled(true); 
+
+  connect(m_Controls.pushButtonRun, SIGNAL(clicked()),
     this, SLOT(OnDoStuffButtonClicked())
   );
 }
